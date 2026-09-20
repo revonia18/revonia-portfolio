@@ -15,8 +15,48 @@
 /*Main style*/
 body {
     font-family: 'Minecraft', sans-serif;
+    margin: 0;
+}
+
+main {
+    margin: 20px;
 }
 
 /*Header*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+
+}
+
+.logo img {
+    width: 300px;
+    height: auto;
+
+}
 
 /*Home Page*/
