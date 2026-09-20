@@ -60,3 +60,29 @@ main {
 }
 
 /*Home Page*/
+.index-body {
+    background-image: url('images/hero.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*About Page*/
+.about-body {
+    background-image: url('images/about.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Projects Page*/
+.projects-body {
+    background-image: url('images/projects.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Contact Page*/
+.contact-body {
+    background-image: url('images/contact.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
