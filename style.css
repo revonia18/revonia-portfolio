@@ -515,14 +515,144 @@ a {
 }
 
 
-/*Contact Page*/
+.contact-page {
+    min-height: calc(100vh - 86px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.projects-page {
+    min-height: auto;
+    display: block;
+    padding: 20px 0 40px;
+}
+
 .contact-body {
     background-image: url('images/contact.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
-    color: #fff
+    background-position: center;
+    color: #fff;
+    min-height: 100vh;
 }
 
+.contact-card {
+    width: min(100%, 680px);
+    background: rgba(18, 18, 18, 0.8);
+    border: 4px solid #d4d4d4;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.5);
+    padding: 32px 28px;
+}
+
+.contact-card h1 {
+    margin: 0 0 12px;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #ffffff;
+    text-shadow: 3px 3px 0 #000;
+}
+
+.section-kicker {
+    margin: 0 0 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 12px;
+    color: #b0ff7a;
+}
+
+.contact-intro {
+    margin: 0 0 24px;
+    line-height: 1.7;
+    color: #efefef;
+}
+
+.contact-form {
+    display: grid;
+    gap: 18px;
+}
+
+.form-field {
+    display: grid;
+    gap: 8px;
+}
+
+.form-field label {
+    color: #fff;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.95);
+    border: 3px solid #2c2c2c;
+    padding: 12px 14px;
+    font-family: 'Minecraft', sans-serif;
+    font-size: 14px;
+    color: #1b1b1b;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    outline: 3px solid #88c7ff;
+    outline-offset: 2px;
+}
+
+.contact-submit {
+    width: fit-content;
+    min-width: 160px;
+    margin-top: 8px;
+}
+
+.projects-section {
+    padding: 40px 20px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: 'Minecraft', sans-serif;
+    color: #ffffff;
+}
+
+.section-title {
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 2.6rem);
+    color: #ffff55;
+    text-shadow: 3px 3px 0px #000;
+    margin-bottom: 30px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+    gap: 24px;
+}
+
+.project-card {
+    background-color: #c6c6c6;
+    border: 4px solid #373737;
+    box-shadow: inset 4px 4px 0px #ffffff, inset -4px -4px 0px #555555, 0 8px 16px rgba(0, 0, 0, 0.6);
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tech-inventory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+.tech-inventory h2 {
+    color: #ffffff;
+    text-shadow: 2px 2px 0 #000;
+    margin-bottom: 20px;
+}
 
 .contact-info {
     position: absolute;
@@ -533,5 +663,4 @@ a {
     position: static;
     transform: none;
     text-align: left;
-
 }

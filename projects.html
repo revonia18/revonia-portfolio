@@ -11,7 +11,7 @@
 <body class="projects-body">
     <header>
         <nav class="navbar">
-            <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+            <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Revonia logo"></a></div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -20,55 +20,48 @@
             </ul>
         </nav>
     </header>
-    <main>
+
+    <main class="projects-page">
         <section class="projects-section">
             <h1 class="section-title">Crafted Projects</h1>
 
-                <div class="projects-grid">
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="images/project1-preview.png" alt="Campus Lost & Found Preview" class="project-img">
+                        <span class="project-badge">Completed</span>
+                    </div>
 
+                    <div class="project-content">
+                        <h3 class="project-title">Campus Lost & Found</h3>
+                        <p class="project-desc">
+                            A local web app designed to help university students report and recover lost items across
+                            campus.
+                        </p>
 
-                    <article class="project-card">
-
-                        <div class="project-image-wrapper">
-                            <img src="images/project1-preview.png" alt="Campus Lost & Found Preview"
-                                class="project-img">
-                            <span class="project-badge">Completed</span>
+                        <div class="tech-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
                         </div>
 
-
-                        <div class="project-content">
-                            <h3 class="project-title">Campus Lost & Found</h3>
-                            <p class="project-desc">
-                                A local web app designed to help university students report and recover lost items
-                                across
-                                campus.
-                            </p>
-
-
-                            <div class="tech-tags">
-                                <span class="tag">HTML5</span>
-                                <span class="tag">CSS3</span>
-                                <span class="tag">JavaScript</span>
-                            </div>
-
-
-                            <div class="card-actions">
-                                <a href="https://github.com/revonia18/wheres-my-stuff-campus-lost-found" target="_blank"
-                                    class="mc-button">
-                                    <span class="btn-text">Code</span>
-                                </a>
-                                <a href="https://wheresmystuff.codedex.me" target="_blank" class="mc-button primary">
-                                    <span class="btn-text">Live Demo</span>
-                                </a>
-                            </div>
+                        <div class="card-actions">
+                            <a href="https://github.com/revonia18/wheres-my-stuff-campus-lost-found" target="_blank"
+                                class="mc-button">
+                                <span class="btn-text">Code</span>
+                            </a>
+                            <a href="https://wheresmystuff.codedex.me" target="_blank" class="mc-button primary">
+                                <span class="btn-text">Live Demo</span>
+                            </a>
                         </div>
-                    </article>
+                    </div>
+                </article>
+            </div>
         </section>
 
         <section class="tech-inventory">
             <h2>Inventory: Tech Stack</h2>
             <div class="inventory-grid">
-
                 <div class="inventory-slot" data-title="HTML5"
                     data-desc="Building block structure for modern web applications.">
                     <img src="images/html5.png" alt="HTML5 Pixel Icon" class="item-icon-img">
@@ -87,25 +80,20 @@
                     <span class="item-count">99</span>
                 </div>
 
-
                 <div class="inventory-slot" data-title="SQL / PL/SQL"
                     data-desc="Relational databases, queries, and stored procedures.">
                     <img src="images/sql.png" alt="SQL Pixel Icon" class="item-icon-img">
                     <span class="item-count">32</span>
                 </div>
 
-                <!-- Slot 5: Figma -->
                 <div class="inventory-slot" data-title="Figma & UI Design"
                     data-desc="UI/UX prototyping, wireframing, and pixel asset creation.">
                     <img src="images/figma.png" alt="Figma Pixel Icon" class="item-icon-img">
                     <span class="item-count">1</span>
                 </div>
-
             </div>
         </section>
     </main>
-    <footer>
-    </footer>
 </body>
 
 </html>
