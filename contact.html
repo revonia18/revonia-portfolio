@@ -27,30 +27,32 @@
             <h1>Contact Me!</h1>
             <p class="contact-intro">Looking to collaborate, build something together, or just say hi?</p>
 
-            <form class="contact-form">
+            <form class="contact-form" action="mailto:revoniamthombeni@gmail.com" method="post" enctype="text/plain">
                 <div class="form-field">
                     <label for="name">Name*</label>
-                    <input type="text" id="name" required placeholder="Enter your name">
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
                 </div>
 
                 <div class="form-field">
                     <label for="email">Email*</label>
-                    <input type="email" id="email" required placeholder="Enter your email">
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
                 </div>
 
                 <div class="form-field">
                     <label for="requests">Message</label>
-                    <textarea id="requests" rows="5" placeholder="Your message"></textarea>
+                    <textarea id="requests" name="message" rows="5" placeholder="Your message"></textarea>
                 </div>
 
                 <button type="submit" class="mc-button primary contact-submit">Send!</button>
             </form>
 
             <div class="social-links" aria-label="Social media links">
-                <a href="https://github.com/revonia18" target="_blank" rel="noreferrer" class="social-link github-link" aria-label="GitHub">
+                <a href="https://github.com/revonia18" target="_blank" rel="noreferrer" class="social-link github-link"
+                    aria-label="GitHub">
                     <img src="images/github.png" alt="GitHub">
                 </a>
-                <a href="https://www.linkedin.com/in/revoniamguni" target="_blank" rel="noreferrer" class="social-link linkedin-link" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/revoniamguni" target="_blank" rel="noreferrer"
+                    class="social-link linkedin-link" aria-label="LinkedIn">
                     <img src="images/linkedin.png" alt="LinkedIn">
                 </a>
             </div>
