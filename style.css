@@ -16,10 +16,15 @@
 body {
     font-family: 'Minecraft', sans-serif;
     margin: 0;
+    color: #fff;
 }
 
 main {
     margin: 20px;
+}
+
+a {
+    text-decoration: none;
 }
 
 /*Header*/
@@ -27,36 +32,37 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: rgba(18, 18, 18, 0.9);
     color: white;
-    padding: 10px 20px;
-
+    padding: 12px 28px;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.1);
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 18px;
     margin: 0;
     padding: 0;
-
+    flex-wrap: wrap;
 }
 
 .nav-links li a {
     color: white;
     text-decoration: none;
-
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .nav-links li a:hover {
     text-decoration: underline;
-
 }
 
 .logo img {
-    width: 300px;
+    width: 220px;
     height: auto;
-
+    display: block;
 }
 
 /*Home Page*/
@@ -64,6 +70,108 @@ main {
     background-image: url('images/hero.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.hero-section {
+    min-height: calc(100vh - 86px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 5vw;
+}
+
+.hero-content {
+    max-width: 620px;
+    background: rgba(20, 20, 20, 0.72);
+    border: 4px solid #d4d4d4;
+    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.6);
+    padding: 32px 28px;
+    backdrop-filter: blur(2px);
+}
+
+.eyebrow {
+    margin: 0 0 12px;
+    color: #b9ff7d;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 12px;
+}
+
+.hero-content h1 {
+    margin: 0 0 18px;
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    line-height: 1.1;
+    color: #fff;
+    text-shadow: 3px 3px 0 #000;
+}
+
+.intro {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #f2f2f2;
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 22px 0;
+}
+
+.tag-list span {
+    background: #5d7cfa;
+    border: 2px solid #1c1c1c;
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 12px;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+.cta-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 24px;
+}
+
+.mc-button {
+    flex: 1;
+    min-width: 160px;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 18px;
+    background-color: #707070;
+    color: #ffffff;
+    font-size: 13px;
+    border: 3px solid;
+    border-color: #ffffff #373737 #373737 #ffffff;
+    box-shadow: inset -2px -2px 0px #373737, inset 2px 2px 0px #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+    transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.mc-button:hover {
+    background-color: #8b8b8b;
+    transform: translateY(-1px);
+}
+
+.mc-button:active {
+    border-color: #373737 #ffffff #ffffff #373737;
+    box-shadow: inset 2px 2px 0px #373737, inset -2px -2px 0px #ffffff;
+}
+
+.mc-button.primary {
+    background-color: #2e7d32;
+    border-color: #81c784 #1b5e20 #1b5e20 #81c784;
+}
+
+.mc-button.primary:hover {
+    background-color: #388e3c;
 }
 
 /*About Page*/
@@ -71,6 +179,52 @@ main {
     background-image: url('images/about.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.about-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 86px);
+    padding: 40px 20px;
+}
+
+.about-card {
+    max-width: 820px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    border: 4px solid #2c2c2c;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.5);
+    padding: 32px 40px;
+    color: #1f1f1f;
+}
+
+.section-kicker {
+    margin: 0 0 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #4a7e4a;
+}
+
+.about-card h1 {
+    margin: 0 0 24px;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #171717;
+    text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.4);
+}
+
+.about-copy {
+    display: grid;
+    gap: 16px;
+}
+
+.about-copy p {
+    margin: 0;
+    line-height: 1.8;
+    font-size: 1rem;
 }
 
 /*Projects Page*/
@@ -366,4 +520,18 @@ main {
     background-image: url('images/contact.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+    color: #fff
+}
+
+
+.contact-info {
+    position: absolute;
+    top: 50%;
+    right: 6%;
+    transform: translateY(-50%);
+    text-align: right;
+    position: static;
+    transform: none;
+    text-align: left;
+
 }
